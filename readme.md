@@ -10,39 +10,16 @@ Parse and stringify space-separated tokens according to the [spec][].
 npm install space-separated-tokens
 ```
 
-**space-separated-tokens** is also available as an AMD, CommonJS, and
-globals module, [uncompressed and compressed][releases].
-
 ## Usage
-
-Dependencies:
 
 ```javascript
 var spaceSeparated = require('space-separated-tokens');
-```
 
-Parsing:
+spaceSeparated.parse(' foo\tbar\nbaz  ');
+//=> ['foo', 'bar', 'baz']
 
-```javascript
-var values = spaceSeparated.parse(' foo\tbar\nbaz  ');
-```
-
-Yields:
-
-```js
-[ 'foo', 'bar', 'baz' ]
-```
-
-Compiling:
-
-```javascript
-var value = spaceSeparated.stringify(values);
-```
-
-Yields:
-
-```js
-'foo bar baz'
+spaceSeparated.stringify(['foo', 'bar', 'baz']);
+//=> 'foo bar baz'
 ```
 
 ## API
@@ -51,18 +28,26 @@ Yields:
 
 Parse space-separated tokens to an array of strings, according to the [spec][].
 
+###### Parameters
+
 *   `value` (`string`) — space-separated tokens.
 
-**Returns**: `Array.<string>` — List of tokens.
+###### Returns
+
+`Array.<string>` — List of tokens.
 
 ### `spaceSeparated.stringify(values)`
 
 Compile an array of strings to space-separated tokens.
 Note that it’s not possible to specify empty or white-space only values.
 
+###### Parameters
+
 *   `values` (`Array.<string>`) — List of tokens.
 
-**Returns**: `string` — Space-separated tokens.
+###### Returns
+
+`string` — Space-separated tokens.
 
 ## License
 
@@ -79,8 +64,6 @@ Note that it’s not possible to specify empty or white-space only values.
 [coverage-page]: https://codecov.io/github/wooorm/space-separated-tokens?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[releases]: https://github.com/wooorm/space-separated-tokens/releases
 
 [license]: LICENSE
 

@@ -49,6 +49,15 @@ Note that it’s not possible to specify empty or white-space only values.
 
 `string` — Space-separated tokens.
 
+## Related
+
+*   [`collapse-white-space`](https://github.com/wooorm/collapse-white-space)
+    — Replace multiple white-space characters with a single space
+*   [`property-information`](https://github.com/wooorm/property-information)
+    — Information on HTML properties
+*   [`comma-separated-tokens`](https://github.com/wooorm/comma-separated-tokens)
+    — Parse/stringify comma-separated tokens
+
 ## License
 
 [MIT][license] © [Titus Wormer][author]

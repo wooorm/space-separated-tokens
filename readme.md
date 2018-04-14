@@ -13,12 +13,12 @@ npm install space-separated-tokens
 ## Usage
 
 ```javascript
-var spaceSeparated = require('space-separated-tokens');
+var spaceSeparated = require('space-separated-tokens')
 
-spaceSeparated.parse(' foo\tbar\nbaz  ');
+spaceSeparated.parse(' foo\tbar\nbaz  ')
 //=> ['foo', 'bar', 'baz']
 
-spaceSeparated.stringify(['foo', 'bar', 'baz']);
+spaceSeparated.stringify(['foo', 'bar', 'baz'])
 //=> 'foo bar baz'
 ```
 

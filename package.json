@@ -12,7 +12,7 @@
     "parse",
     "stringify"
   ],
-  "repository": "https://github.com/wooorm/space-separated-tokens",
+  "repository": "wooorm/space-separated-tokens",
   "bugs": "https://github.com/wooorm/space-separated-tokens/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [

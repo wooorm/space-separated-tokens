@@ -5,3 +5,4 @@ coverage/
 node_modules/
 space-separated-tokens.js
 space-separated-tokens.min.js
+yarn.lock

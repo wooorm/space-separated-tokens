@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var spaceSeparated = require('./index.js');
+var spaceSeparated = require('.');
 
 test('space-separated-tokens', function (t) {
   t.equal(

@@ -1,10 +1,11 @@
 language: node_js
 node_js:
-- '4.0'
-- '8.0'
+- lts/boron
+- node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
     secure: gNF8ehUWqki0QZ2ZTIWHXcWcWtNFwr2+v2XhDTRt30tyM3QF3FYpoutnAkJa97XP4O/d0mB7UWu7MRlc8xzyS6MpyS0hgpbalk5q++lKQCpGkz0kPjyP4GUX8fYxIlTQwaMhU15BX8HKHHZSx8f/ufq3oH2wb4VZzqneHFnBOINVBZwvoEZBKcq2J+1G8WSQlFOz5I5NrWOgfoOOgLLmjFq2KfqK0wdg5IkBP4RvzJ4mRa+XJQKsXTC1Jwf/RwZLm+7yOSCs76CkPr6dD4T4VPsj7NVa3VjA/WQb7b94/1Ajzngpx8srtMUcFDQNGDMEeHUQWO93uEwyboik7mZXmbqvRIRBg5FWkFbQkfRHOHSgcC/FPMH1Iooupa9cH0x+YbqRj8SbA0vJQNn+OiuEQsMZWz96aShK3jZx6g61NN4EbjO3PtZ2wQKJLfJkDx11pu5K7CydAHu6Y8VyWu9TKF6sGFLDZHq9Baaov4wtfUxWnRX1KY5Ovhw218sgRTtIAD6f8jVsKSflttuIw7bSNHHnc9JvS5+mBTuR3e88EpuNuXjTwv0wmZdQC+h4sOdtWZlEYPfiFpwxPTn0VlNBUbaVM5pY5ba/pI9ICAKzSslo75C+hE61IHRNaSPv1lHqCtQqJxfjv/OJXFXB0TkJOVRHjvHeQtrjgjQ5Qd9Ie54=
   file:
@@ -12,4 +13,3 @@ deploy:
     - "space-separated-tokens.min.js"
   on:
     tags: true
-    node: '8.0'

@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-- lts/boron
-- node
+  - lts/boron
+  - node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
   skip_cleanup: true
   api_key:
-    secure: gNF8ehUWqki0QZ2ZTIWHXcWcWtNFwr2+v2XhDTRt30tyM3QF3FYpoutnAkJa97XP4O/d0mB7UWu7MRlc8xzyS6MpyS0hgpbalk5q++lKQCpGkz0kPjyP4GUX8fYxIlTQwaMhU15BX8HKHHZSx8f/ufq3oH2wb4VZzqneHFnBOINVBZwvoEZBKcq2J+1G8WSQlFOz5I5NrWOgfoOOgLLmjFq2KfqK0wdg5IkBP4RvzJ4mRa+XJQKsXTC1Jwf/RwZLm+7yOSCs76CkPr6dD4T4VPsj7NVa3VjA/WQb7b94/1Ajzngpx8srtMUcFDQNGDMEeHUQWO93uEwyboik7mZXmbqvRIRBg5FWkFbQkfRHOHSgcC/FPMH1Iooupa9cH0x+YbqRj8SbA0vJQNn+OiuEQsMZWz96aShK3jZx6g61NN4EbjO3PtZ2wQKJLfJkDx11pu5K7CydAHu6Y8VyWu9TKF6sGFLDZHq9Baaov4wtfUxWnRX1KY5Ovhw218sgRTtIAD6f8jVsKSflttuIw7bSNHHnc9JvS5+mBTuR3e88EpuNuXjTwv0wmZdQC+h4sOdtWZlEYPfiFpwxPTn0VlNBUbaVM5pY5ba/pI9ICAKzSslo75C+hE61IHRNaSPv1lHqCtQqJxfjv/OJXFXB0TkJOVRHjvHeQtrjgjQ5Qd9Ie54=
+    secure: ZJkNDa4qUNux+oviTHn6ydpq2Hkat6w43d4YTX6CsWiHdKQa7ALm+S3y+1ieRVc2jIChqVkCPjD3PwYTAhP/5DWuhBGxsd1Vd+2Run+PMkXIUb0Eh1y4LZtvLQgBB/XLNY5teo9222HAR1DTqcwCsVX5wxG0Qmf0KCSekfpUyp6zcG8auTE87a/gPbvKtib1NnecA8psP3PsCSt+ouf77hiiSGZT2oyh0z7iQxfuWjIF1jpv0xh1weY8tL92KccoKHYRpaLIX1yUJJW5S6+s7f1UsZduHS5eZ1DTJxE+eQ3y/LJZaPIOuguEyTbS7OZCfCcCQO2TeRkOmP9Q9GcyOCEMi6TciEFIi/ukrCVx6SBsCPpGMeudy5sCsUriWXJwhwsTNBiluNcr52EK1LVgSWSYt+4UFGGk+pfMM5dN6UuJ01glqIDrLxLzbksxkl6Q3RJt6iRDNCdfEkAqKs7JM+De9Wd5xZjy4ftVW3BnVWXwZz0Sw8H/n9b5oswvx/0zai/LkLXmXeNmqY+6vk0RE9GWtAOvOvugI0tr1wfIu9BDUq2tod26biJ6NAwj2+rjhM4qfxWJdHLTq21OyxPqDQsrBTJczX7zd1rYvzh0MoGJQgGc2O8suXTggDmlhv7ePx+rk4xPQa4rZvC7Lo/uW/YiOSRAMWOUJTZAQ1o3ouA=
   file:
-    - "space-separated-tokens.js"
-    - "space-separated-tokens.min.js"
+    - 'space-separated-tokens.js'
+    - 'space-separated-tokens.min.js'
   on:
     tags: true

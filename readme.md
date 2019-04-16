@@ -74,7 +74,7 @@ Note that it’s not possible to specify empty or white-space only values.
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[license]: LICENSE
+[license]: license
 
 [author]: http://wooorm.com
 

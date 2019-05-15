@@ -76,6 +76,6 @@ Note that it’s not possible to specify empty or white-space only values.
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
 
 [spec]: https://html.spec.whatwg.org/#space-separated-tokens

@@ -1,4 +1,9 @@
-# space-separated-tokens [![Build Status][build-badge]][build-page] [![Coverage Status][coverage-badge]][coverage-page]
+# space-separated-tokens
+
+[![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 Parse and stringify space-separated tokens according to the [spec][].
 
@@ -66,11 +71,19 @@ Note that it’s not possible to specify empty or white-space only values.
 
 [build-badge]: https://img.shields.io/travis/wooorm/space-separated-tokens.svg
 
-[build-page]: https://travis-ci.org/wooorm/space-separated-tokens
+[build]: https://travis-ci.org/wooorm/space-separated-tokens
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/space-separated-tokens.svg
 
-[coverage-page]: https://codecov.io/github/wooorm/space-separated-tokens?branch=master
+[coverage]: https://codecov.io/github/wooorm/space-separated-tokens
+
+[downloads-badge]: https://img.shields.io/npm/dm/space-separated-tokens.svg
+
+[downloads]: https://www.npmjs.com/package/space-separated-tokens
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/space-separated-tokens.svg
+
+[size]: https://bundlephobia.com/result?p=space-separated-tokens
 
 [npm]: https://docs.npmjs.com/cli/install
 

@@ -18,13 +18,13 @@ test('space-separated-tokens', function(t) {
     st.deepEqual(
       spaceSeparated.parse(' '),
       [],
-      'should return an empty array for a white-space'
+      'should return an empty array for a single whitespace'
     )
 
     st.deepEqual(
       spaceSeparated.parse('\n\t\t '),
       [],
-      'should return an empty array for a several white-spaces'
+      'should return an empty array for a several whitespace characters'
     )
 
     st.deepEqual(

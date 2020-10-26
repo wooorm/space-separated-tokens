@@ -3,15 +3,11 @@
 exports.parse = parse
 exports.stringify = stringify
 
-var empty = ''
-var space = ' '
-var whiteSpace = /[ \t\n\r\f]+/g
-
 function parse(value) {
-  var input = String(value || empty).trim()
-  return input === empty ? [] : input.split(whiteSpace)
+  var input = String(value || '').trim()
+  return input ? input.split(/[ \t\n\r\f]+/g) : []
 }
 
 function stringify(values) {
-  return values.join(space).trim()
+  return values.join(' ').trim()
 }

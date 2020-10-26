@@ -3,10 +3,10 @@
 var test = require('tape')
 var spaceSeparated = require('.')
 
-test('space-separated-tokens', function(t) {
+test('space-separated-tokens', function (t) {
   t.equal(typeof spaceSeparated, 'object', 'should be an `object`')
 
-  t.test('.parse()', function(st) {
+  t.test('.parse()', function (st) {
     st.equal(typeof spaceSeparated.parse, 'function', 'should be a method')
 
     st.deepEqual(
@@ -36,7 +36,7 @@ test('space-separated-tokens', function(t) {
     st.end()
   })
 
-  t.test('.stringify()', function(st) {
+  t.test('.stringify()', function (st) {
     st.equal(typeof spaceSeparated.stringify, 'function', 'should be a method')
 
     st.deepEqual(

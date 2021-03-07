@@ -18,41 +18,30 @@ npm install space-separated-tokens
 ## Usage
 
 ```js
-var spaceSeparated = require('space-separated-tokens')
+import {parse, stringify} from 'space-separated-tokens'
 
-spaceSeparated.parse(' foo\tbar\nbaz  ')
+parse(' foo\tbar\nbaz  ')
 //=> ['foo', 'bar', 'baz']
 
-spaceSeparated.stringify(['foo', 'bar', 'baz'])
+stringify(['foo', 'bar', 'baz'])
 //=> 'foo bar baz'
 ```
 
 ## API
 
-### `spaceSeparated.parse(value)`
+`space-separated-tokens` exports the following identifiers: `parse`,
+`stringify`.
+There is no default export.
 
-Parse space-separated tokens to an array of strings, according to the [spec][].
+### `parse(value)`
 
-###### Parameters
+Parse space separated tokens (`string`) to an array of strings (`string[]`),
+according to the [spec][].
 
-*   `value` (`string`) — space-separated tokens
+### `stringify(values)`
 
-###### Returns
-
-`Array.<string>` — List of tokens.
-
-### `spaceSeparated.stringify(values)`
-
-Serialize an array of strings to space-separated tokens.
+Serialize an array of strings (`string[]`) to space separated tokens (`string`).
 Note that it’s not possible to specify empty or whitespace only values.
-
-###### Parameters
-
-*   `values` (`Array.<string>`) — List of tokens
-
-###### Returns
-
-`string` — Space-separated tokens.
 
 ## Related
 

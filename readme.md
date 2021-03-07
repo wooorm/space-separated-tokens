@@ -69,9 +69,9 @@ Note that it’s not possible to specify empty or whitespace only values.
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/space-separated-tokens.svg
+[build-badge]: https://github.com/wooorm/space-separated-tokens/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/space-separated-tokens
+[build]: https://github.com/wooorm/space-separated-tokens/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/space-separated-tokens.svg
 

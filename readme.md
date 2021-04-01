@@ -9,6 +9,9 @@ Parse and stringify space-separated tokens according to the [spec][].
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -29,8 +32,7 @@ stringify(['foo', 'bar', 'baz'])
 
 ## API
 
-`space-separated-tokens` exports the following identifiers: `parse`,
-`stringify`.
+This package exports the following identifiers: `parse`, `stringify`.
 There is no default export.
 
 ### `parse(value)`

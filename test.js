@@ -1,8 +1,8 @@
 import test from 'tape'
 import {parse, stringify} from './index.js'
 
-test('space-separated-tokens', function (t) {
-  t.test('.parse()', function (st) {
+test('space-separated-tokens', (t) => {
+  t.test('.parse()', (st) => {
     st.equal(typeof parse, 'function', 'should be a method')
 
     // @ts-ignore runtime
@@ -29,7 +29,7 @@ test('space-separated-tokens', function (t) {
     st.end()
   })
 
-  t.test('.stringify()', function (st) {
+  t.test('.stringify()', (st) => {
     st.equal(typeof stringify, 'function', 'should be a method')
 
     st.deepEqual(

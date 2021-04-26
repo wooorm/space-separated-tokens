@@ -5,7 +5,7 @@
  * @returns {string[]} Tokens
  */
 export function parse(value) {
-  var input = String(value || '').trim()
+  const input = String(value || '').trim()
   return input ? input.split(/[ \t\n\r\f]+/g) : []
 }
 

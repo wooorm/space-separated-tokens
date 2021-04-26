@@ -1,6 +1,6 @@
 {
   "name": "space-separated-tokens",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Parse and stringify space separated tokens",
   "license": "MIT",
   "keywords": [

@@ -1,71 +1,74 @@
-import test from 'tape'
+import assert from 'node:assert/strict'
+import test from 'node:test'
 import {parse, stringify} from './index.js'
 
-test('space-separated-tokens', (t) => {
-  t.test('.parse()', (st) => {
-    st.equal(typeof parse, 'function', 'should be a method')
+test('space-separated-tokens', async function (t) {
+  await t.test('.parse()', () => {
+    assert.equal(typeof parse, 'function', 'should be a method')
 
-    // @ts-ignore runtime
-    st.deepEqual(parse(), [], 'should return an empty array for an empty value')
+    assert.deepEqual(
+      // @ts-expect-error runtime
+      parse(),
+      [],
+      'should return an empty array for an empty value'
+    )
 
-    st.deepEqual(
+    assert.deepEqual(
       parse(' '),
       [],
       'should return an empty array for a single whitespace'
     )
 
-    st.deepEqual(
+    assert.deepEqual(
       parse('\n\t\t '),
       [],
       'should return an empty array for a several whitespace characters'
     )
 
-    st.deepEqual(
+    assert.deepEqual(
       parse(' foo bar 💩\t\n\t'),
       ['foo', 'bar', '💩'],
       'should work'
     )
-
-    st.end()
   })
 
-  t.test('.stringify()', (st) => {
-    st.equal(typeof stringify, 'function', 'should be a method')
+  await t.test('.stringify()', () => {
+    assert.equal(typeof stringify, 'function', 'should be a method')
 
-    st.deepEqual(
+    assert.deepEqual(
       stringify([]),
       '',
       'should return an empty string for an empty array'
     )
 
-    st.deepEqual(
+    assert.deepEqual(
       stringify(['']),
       '',
       'should return an empty string for an empty entry'
     )
 
-    st.deepEqual(
+    assert.deepEqual(
       stringify(['', '']),
       '',
       'should return an empty string for two empty entries'
     )
 
-    st.deepEqual(
+    assert.deepEqual(
       stringify(['', 'foo']),
       'foo',
       'should ignore initial empty entries'
     )
 
-    st.deepEqual(
+    assert.deepEqual(
       stringify(['foo', '']),
       'foo',
       'should ignore final empty values'
     )
 
-    st.deepEqual(stringify(['a', 'b', 'd d']), 'a b d d', 'should do its best')
-
-    st.end()
+    assert.deepEqual(
+      stringify(['a', 'b', 'd d']),
+      'a b d d',
+      'should do its best'
+    )
   })
-
-  t.end()
 })
